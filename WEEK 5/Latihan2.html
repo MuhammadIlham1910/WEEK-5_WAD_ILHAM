@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Laithan Bersama Pak Aman SI4505</title>
+  </head>
+
+  <body>
+    <h1>JavaScript Can Change Image</h1>
+    <img id="myImage" onclick="changeImage()" src="e1e3b58a1f98c20f64473f16d8962801.png" width="1500" height="500">
+    <p>Click the Image to change image.</p>
+    <script>
+      function changeImage() {
+        var image = document.getElementById('myImage');
+        if (image.src.match('bulbon')) {
+          image.src = "e1e3b58a1f98c20f64473f16d8962801.png";
+        } else {
+          image.src = "9c25ca1684f64242eae7d078f8e174da.jpg"
+        }
+      }
+    </script>
+  </body>
+</html>
